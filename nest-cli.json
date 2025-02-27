@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/gateway/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/gateway/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/gateway",
+  "projects": {
+    "gateway": {
+      "type": "application",
+      "root": "apps/gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gateway/tsconfig.app.json"
+      }
+    },
+    "idp": {
+      "type": "application",
+      "root": "apps/idp",
+      "entryFile": "main",
+      "sourceRoot": "apps/idp/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/idp/tsconfig.app.json"
+      }
+    },
+    "generator": {
+      "type": "application",
+      "root": "apps/generator",
+      "entryFile": "main",
+      "sourceRoot": "apps/generator/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/generator/tsconfig.app.json"
+      }
+    },
+    "cache": {
+      "type": "application",
+      "root": "apps/cache",
+      "entryFile": "main",
+      "sourceRoot": "apps/cache/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/cache/tsconfig.app.json"
+      }
+    },
+    "crud": {
+      "type": "application",
+      "root": "apps/crud",
+      "entryFile": "main",
+      "sourceRoot": "apps/crud/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/crud/tsconfig.app.json"
+      }
+    }
+  }
+}

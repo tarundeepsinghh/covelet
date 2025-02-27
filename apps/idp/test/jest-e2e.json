@@ -1,0 +1,13 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^@common(|/.*)$": "<rootDir>/../../../common/$1",
+    "^@libs/health-check(|/.*)$": "<rootDir>/../../../libs/health-check/src/$1"
+  }
+}
